@@ -1,0 +1,23 @@
+.hero__wrapper {
+    min-height: 100vh;
+    background-image: url(../../../../../assets/bg.png);
+    background-repeat: no-repeat;
+}
+.hero {
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0 auto;
+    max-width: 1480px;
+    & .hero__tags {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        padding-top: 500px;
+        max-width: 505px;
+        width: 100%;
+        justify-content: space-between;
+
+    }
+}
