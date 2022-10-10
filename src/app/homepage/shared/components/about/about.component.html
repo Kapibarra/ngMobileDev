@@ -11,17 +11,17 @@
                     </ul>
                 </div>
         </div>
-        <div class="about__image" *ngIf="activeTab == 'apps'">
-            <div class="about__image-description"></div>
-            <img src="assets/aboutimagetest.png" alt="" class="about__image-item">
+        <div class="about__image" *ngIf="activeTab == 'apps'" >
+            <div class="about__image-description desc-1">We create Android & iOS apps to bring joy, health, money and more</div>
+            <img class="image-1" src="assets/aboutimagetest.png" alt="" class="about__image-item" @Opacity>
         </div>
         <div class="about__image" *ngIf="activeTab == 'media'">
-            <div class="about__image-description"></div>
-            <img src="assets/aboutimage2.png" alt="" class="about__image-item">
+            <div class="about__image-description desc-2">We define and deploy the best strategies to reach the target audience</div>
+            <img class="image-2" src="assets/aboutimage2.png" alt="" class="about__image-item" @Opacity>
         </div>
         <div class="about__image" *ngIf="activeTab == 'nft'">
-            <div class="about__image-description"></div>
-            <img src="assets/aboutimage3.png" alt="" class="about__image-item">
+            <div class="about__image-description desc-3">We make a wide range of cryptocurrency investments, such as NFT and P2E projects</div>
+            <img class="image-3" src="assets/aboutimage3.png" alt="" class="about__image-item" @Opacity>
         </div>
     </div>
 </div>

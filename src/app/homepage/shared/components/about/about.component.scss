@@ -84,5 +84,28 @@
     & img {
       max-width: 1092px;
     }
+    & .about__image-description {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 20px 25px;
+      gap: 20px;
+      /* #001D34 */
+
+      background: #001d34;
+      border-radius: 15px;
+      width: 100%;
+      max-width: 333px;
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 180%;
+      /* or 25px */
+
+      /* #B2BBC2 */
+
+      color: #b2bbc2;
+    }
   }
 }
