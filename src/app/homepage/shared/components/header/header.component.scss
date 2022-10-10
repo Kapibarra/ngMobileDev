@@ -1,0 +1,18 @@
+.header {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1480px;
+  height: 114px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  & .logo {
+    max-height: 64px;
+    display: flex;
+    align-items: baseline;
+    padding-top: 50px;
+    & img {
+    }
+  }
+}
