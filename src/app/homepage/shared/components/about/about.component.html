@@ -1,1 +1,27 @@
-<p>about works!</p>
+<div class="about__wrapper">
+    <div class="about">
+        <div class="about__description">
+            <div class="about__title">What are 
+                we doing?</div>
+                <div class="description__tabs">
+                    <ul class="tabs-nav">
+                        <li class="tabs-nav-item" [class.active]="activeTab == 'apps'" (click)="onTabCLick('apps')">Mobile Apps & Web 3.0</li>
+                        <li class="tabs-nav-item" [class.active]="activeTab == 'media'" (click)="onTabCLick('media')">Media Buying</li>
+                        <li class="tabs-nav-item" [class.active]="activeTab == 'nft'" (click)="onTabCLick('nft')">NFT & P2E Pioneers</li>
+                    </ul>
+                </div>
+        </div>
+        <div class="about__image" *ngIf="activeTab == 'apps'">
+            <div class="about__image-description"></div>
+            <img src="assets/aboutimage.png" alt="" class="about__image-item">
+        </div>
+        <div class="about__image" *ngIf="activeTab == 'media'">
+            <div class="about__image-description"></div>
+            <img src="assets/aboutimage2.png" alt="" class="about__image-item">
+        </div>
+        <div class="about__image" *ngIf="activeTab == 'nft'">
+            <div class="about__image-description"></div>
+            <img src="assets/aboutimage3.png" alt="" class="about__image-item">
+        </div>
+    </div>
+</div>

@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about.component.scss']
 })
 export class AboutComponent implements OnInit {
-
+  activeTab: string = 'apps';
   constructor() { }
 
   ngOnInit(): void {
   }
-
+  onTabCLick(tab: any) {
+    this.activeTab = tab;
+  }
 }
