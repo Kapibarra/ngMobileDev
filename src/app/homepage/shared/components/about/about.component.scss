@@ -10,7 +10,7 @@
   padding-left: 10px;
   padding-right: 10px;
   margin: 0 auto;
-  max-width: 1580px;
+  max-width: 1620px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -78,6 +78,11 @@
           transform: rotate(90deg);
         }
       }
+    }
+  }
+  .about__image {
+    & img {
+      max-width: 1092px;
     }
   }
 }
