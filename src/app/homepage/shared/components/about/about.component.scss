@@ -81,6 +81,7 @@
     }
   }
   .about__image {
+    position: relative;
     & img {
       max-width: 1092px;
     }
@@ -106,6 +107,27 @@
       /* #B2BBC2 */
 
       color: #b2bbc2;
+    }
+    & .desc-1 {
+      position: relative;
+      top: 0px;
+      left: 150px;
+    }
+    & .desc-2 {
+      position: relative;
+      top: 50px;
+      right: -100px;
+      margin-left: auto;
+    }
+    & .desc-3 {
+      position: relative;
+      top: 140px;
+      left: -190px;
+    }
+    & .image-1 {
+    }
+    & .image-2 {
+      padding-right: 100px;
     }
     & .image-3 {
       padding-right: 300px;

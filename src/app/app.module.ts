@@ -13,6 +13,7 @@ import { TrafficComponent } from './homepage/shared/components/traffic/traffic.c
 import { MapComponent } from './homepage/shared/components/map/map.component';
 import { JobComponent } from './homepage/shared/components/job/job.component';
 import { ContactsComponent } from './homepage/shared/components/contacts/contacts.component';
+import { AccorionItemComponent } from './homepage/shared/components/projects/accorion-item/accorion-item.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { ContactsComponent } from './homepage/shared/components/contacts/contact
     TrafficComponent,
     MapComponent,
     JobComponent,
-    ContactsComponent
+    ContactsComponent,
+    AccorionItemComponent
   ],
   imports: [
     BrowserModule,
