@@ -11,18 +11,75 @@
   padding-right: 10px;
   margin: 0 auto;
   max-width: 1580px;
-  padding-bottom: 130px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  & .hero__description {
+    padding-bottom: 270px;
+  }
+  & .hero__image-section {
+    position: relative;
+    z-index: 999;
+    overflow: hidden;
+    width: 100%;
+    max-width: 483px;
+    padding-right: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
 
+    & .hero__image-up {
+      position: absolute;
+      left: 0px;
+      top: 30px;
+      height: 310%;
+      width: 100%;
+      animation: slideshow-up 25s linear infinite;
+      background-image: url(../../../../../assets/hero-column01.png);
+      background-repeat: repeat-y;
+    }
+    & .hero__image-up-2 {
+      position: absolute;
+      left: 240px;
+      top: 30px;
+      height: 310%;
+      width: 100%;
+      animation: slideshow-up 25s linear infinite;
+      background-image: url(../../../../../assets/hero-column02.png);
+      background-repeat: repeat-y;
+    }
+    & .hero__image-down {
+      position: absolute;
+      left: 120px;
+      top: 30px;
+      gap: 30px;
+      height: 310%;
+      width: 100%;
+      animation: slideshow-down 25s linear infinite;
+      background-image: url(../../../../../assets/hero-column03.png);
+      background-repeat: repeat-y;
+    }
+    & .hero__image-down-2 {
+      position: absolute;
+      left: 360px;
+      top: 30px;
+      height: 310%;
+      width: 100%;
+      animation: slideshow-down 25s linear infinite;
+      background-image: url(../../../../../assets/hero-column04.png);
+      background-repeat: repeat-y;
+    }
+  }
   & .hero__tags {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    padding-top: 500px;
-    max-width: 505px;
+    padding-top: 340px;
+    max-width: 571px;
     width: 100%;
     justify-content: space-between;
     padding-bottom: 30px;
-
     & .hero__tags-item {
       width: fit-content;
       padding: 16px 26px;
@@ -76,5 +133,28 @@
     & .hero__subtitle-img {
       margin-left: 30px;
     }
+  }
+}
+
+@keyframes slideshow-up {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: -203%;
+  }
+  100% {
+    top: 0%;
+  }
+}
+@keyframes slideshow-down {
+  0% {
+    top: -203%;
+  }
+  50% {
+    top: 0%;
+  }
+  100% {
+    top: -203%;
   }
 }

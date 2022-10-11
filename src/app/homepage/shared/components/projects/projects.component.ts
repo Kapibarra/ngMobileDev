@@ -7,8 +7,6 @@ interface Projects {
   isActive: boolean,
   src: string,
 }
-
-
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
