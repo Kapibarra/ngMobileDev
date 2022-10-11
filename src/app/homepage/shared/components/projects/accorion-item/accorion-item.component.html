@@ -6,7 +6,7 @@
       src="assets/arrow-right.png"
     />
   </div>
-  <div class="header__title">
+  <div class="header__title" [ngClass]="showBody ? 'active' : ''">
     {{ title }}
   </div>
 </div>

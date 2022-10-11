@@ -18,6 +18,7 @@ export class ProjectsComponent implements OnInit {
 isOpened: boolean = false;
 activeIndex: number = 1;
 selectedProject?: Projects ;
+activeClass!:boolean
 projects:Projects[] = [
   {
     title: 'iGaming',
@@ -38,21 +39,21 @@ projects:Projects[] = [
     description: 'User-friendly apps to match & meet',
     activeTab: 'dating',
     isActive: false,
-    src: 'assets/project01.png',
+    src: 'assets/project03.png',
   },
   {
     title: 'Astrology',
     description: 'Personalized horoscope, compatibility meter, astrological events that help navigate your relationships',
     activeTab: 'astro',
     isActive: false,
-    src: 'assets/project01.png',
+    src: 'assets/project04.png',
   },
   {
     title: 'VPN',
     description: 'Secure VPN apps to stay private online',
     activeTab: 'vpn',
     isActive: false,
-    src: 'assets/project01.png',
+    src: 'assets/project05.png',
   },
 ]
 

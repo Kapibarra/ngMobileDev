@@ -1,6 +1,10 @@
 <div class="projects__wrapper">
   <div class="projects">
     <div class="projects__description">
+      <div class="projects__title">Our Projects</div>
+      <div class="projects__subtitle">
+        Our projects are downloaded more than 10 million times. Some of them:
+      </div>
       <div class="accordion__module">
         <app-accorion-item
           (click)="showProject(project)"
@@ -12,7 +16,8 @@
       </div>
     </div>
     <div class="projects__image" *ngIf="selectedProject">
-      <img [src]="selectedProject.src" />
+      <img [src]="selectedProject.src" class="project__image-item" />
+      <img src="assets/lightning.png" class="project__image-bg" />
     </div>
   </div>
 </div>
