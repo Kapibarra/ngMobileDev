@@ -1,0 +1,64 @@
+.traffic__wrapper {
+  background-image: url(../../../../../assets/bgtraffic.png);
+  background-repeat: no-repeat;
+  margin-top: -2px;
+}
+.traffic {
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0 auto;
+  max-width: 1620px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 150px;
+  padding-bottom: 135px;
+  & .traffic__description {
+    & .traffic__title {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 64px;
+      line-height: 96px;
+      /* identical to box height */
+
+      /* #FFFFFF */
+
+      color: #ffffff;
+    }
+    & .traffic__subtitle {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 30px;
+      max-width: 487px;
+      /* #B2BBC2 */
+      margin-top: 30px;
+      color: #b2bbc2;
+      padding-bottom: 510px;
+    }
+    & .traffic__note {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      max-width: 311px;
+      color: rgba(255, 255, 255, 0.25);
+    }
+  }
+  & .traffic__icons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 960px;
+    align-items: center;
+    align-content: flex-end;
+    margin-bottom: -90px;
+  }
+}
