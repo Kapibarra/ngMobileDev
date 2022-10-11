@@ -1,5 +1,6 @@
 import { trigger, state, style, animate, transition } from '@angular/animations';
-import { Component, Input, OnInit } from '@angular/core';
+import { outputAst } from '@angular/compiler';
+import { Component, EventEmitter, Input, OnInit, Output ,SimpleChanges} from '@angular/core';
 
 @Component({
   selector: 'app-accorion-item',
@@ -33,12 +34,18 @@ filter: 'brightness(1)'
 })
 export class AccorionItemComponent implements OnInit {
   @Input() title: string = 'test title'
+  @Input() activeIndex: number = 0
+  @Input() isActive: boolean = false
   showBody = false
   constructor() { }
-
   ngOnInit(): void {
+    if (this.isActive) {
+      this.showBody = true;
+    }
   }
   toggleAccordion() {
-    this.showBody = !this.showBody;
   }  
+  ngOnChanges(changes: SimpleChanges) {
+    changes['isActive'].currentValue ? this.showBody = true : this.showBody = false;  
+}
 }

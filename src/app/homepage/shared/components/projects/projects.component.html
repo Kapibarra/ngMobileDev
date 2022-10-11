@@ -2,31 +2,13 @@
   <div class="projects">
     <div class="projects__description">
       <div class="accordion__module">
-        <app-accorion-item title="iGaming" [class.active]="activeTab == 'games'"
-          >Well-designed and handy apps for fast-paced, innovative and
-          ever-growing young industry</app-accorion-item
-        >
         <app-accorion-item
-          title="Finance"
-          [class.active]="activeTab == 'finance'"
-          >Practical apps with stock trading signals and financial
-          recommendations
-        </app-accorion-item>
-        <app-accorion-item
-          title="Dating"
-          [class.active]="activeTab == 'dating'"
+          (click)="showProject(project)"
+          [isActive]="project.isActive"
+          *ngFor="let project of projects; let i = index"
+          title="{{ project.title }}"
+          >{{ project.description }}</app-accorion-item
         >
-          User-friendly apps to match & meet</app-accorion-item
-        >
-        <app-accorion-item
-          title="Astrology"
-          [class.active]="activeTab == 'astro'"
-          >Personalized horoscope, compatibility meter, astrological events that
-          help navigate your relationships
-        </app-accorion-item>
-        <app-accorion-item title="VPN" [class.active]="activeTab == 'vpn'"
-          >Secure VPN apps to stay private online
-        </app-accorion-item>
       </div>
     </div>
     <div class="projects__image"></div>
