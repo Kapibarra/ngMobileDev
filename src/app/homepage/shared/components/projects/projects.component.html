@@ -1,23 +1,34 @@
 <div class="projects__wrapper">
-    <div class="projects">
-        <div class="projects__description">
-            <div class="accordion__module">
-                <app-accorion-item title="Авторский декор">W2W предлагает уникальный интерьерный декор. Мы не копируем чужие работы. Постоянно находимся в поиске новых интересных решений и качественных материалов. Защищаем свои авторские права.</app-accorion-item>
-                <app-accorion-item title="Индивидуальность">Наши клиенты могут выбрать индивидуальную модель, цветовое решение и размер. Кроме того широкий спектр материалов позволит найти оптимальное ценовое предложение. Каждое изделие формируется и согласуется в 3D формате и далее отправляется в производство.
-                    Дополнительно можем «визуализировать» Ваше изделие в Вашем интерьере.
-                </app-accorion-item>
-                <app-accorion-item title="Материалы">Производство W2W находится в Москве. Мы располагаем свои собственным высокотехнологичным оборудованием : станки ЧПУ, столярный цех, покрасочная камера. Все технологические процессы отработаны на разных материалах: МДФ, португальская древесная панель,
-                    массив дерева. Используем только профессиональные итальянские ЛКМ.
-                </app-accorion-item>
-                <app-accorion-item title="Высококвалифицированный
-                труд">Команда W2W регулярно проходит стажировки позволяющие внедрять новые технологии в производстве интерьерного декора</app-accorion-item>
-                <app-accorion-item title="Контроль качества">Прежде чем отправиться к заказчику каждое изделие проходит 8 этапов контроля качества. Начиная от создания STL-модели и заканчивая оценкой надёжности крепления</app-accorion-item>
-                <app-accorion-item title="Надёжные партнёры">С нами сотрудничают такие компании как: Renner, Valchromat, Costamona и др.
-                </app-accorion-item>
-            </div>
-        </div>
-        <div class="projects__image">
-
-        </div>
+  <div class="projects">
+    <div class="projects__description">
+      <div class="accordion__module">
+        <app-accorion-item title="iGaming" [class.active]="activeTab == 'games'"
+          >Well-designed and handy apps for fast-paced, innovative and
+          ever-growing young industry</app-accorion-item
+        >
+        <app-accorion-item
+          title="Finance"
+          [class.active]="activeTab == 'finance'"
+          >Practical apps with stock trading signals and financial
+          recommendations
+        </app-accorion-item>
+        <app-accorion-item
+          title="Dating"
+          [class.active]="activeTab == 'dating'"
+        >
+          User-friendly apps to match & meet</app-accorion-item
+        >
+        <app-accorion-item
+          title="Astrology"
+          [class.active]="activeTab == 'astro'"
+          >Personalized horoscope, compatibility meter, astrological events that
+          help navigate your relationships
+        </app-accorion-item>
+        <app-accorion-item title="VPN" [class.active]="activeTab == 'vpn'"
+          >Secure VPN apps to stay private online
+        </app-accorion-item>
+      </div>
     </div>
+    <div class="projects__image"></div>
+  </div>
 </div>
