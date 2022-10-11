@@ -11,6 +11,8 @@
         >
       </div>
     </div>
-    <div class="projects__image"></div>
+    <div class="projects__image" *ngIf="selectedProject">
+      <img [src]="selectedProject.src" />
+    </div>
   </div>
 </div>

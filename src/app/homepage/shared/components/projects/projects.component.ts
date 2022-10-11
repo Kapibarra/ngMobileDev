@@ -4,8 +4,10 @@ interface Projects {
   title: string,
   description: string,
   activeTab: string,
-  isActive: boolean
+  isActive: boolean,
+  src: string,
 }
+
 
 @Component({
   selector: 'app-projects',
@@ -15,46 +17,53 @@ interface Projects {
 export class ProjectsComponent implements OnInit {
 isOpened: boolean = false;
 activeIndex: number = 1;
+selectedProject?: Projects ;
 projects:Projects[] = [
   {
-    title: 'Project 1',
-    description: 'Project 1 description',
+    title: 'iGaming',
+    description: 'Well-designed and handy apps for fast-paced, innovative and ever-growing young industry',
     activeTab: 'games',
-    isActive: true
+    isActive: true,
+    src: 'assets/project01.png',
   },
   {
-    title: 'Project 1',
-    description: 'Project 1 description',
-    activeTab: 'games2',
-    isActive: false
+    title: 'Finance',
+    description: 'Practical apps with stock trading signals and financial recommendations',
+    activeTab: 'finance',
+    isActive: false,
+    src: 'assets/project02.png',
   },
   {
-    title: 'Project 1',
-    description: 'Project 1 description',
-    activeTab: 'games3',
-    isActive: false
+    title: 'Dating',
+    description: 'User-friendly apps to match & meet',
+    activeTab: 'dating',
+    isActive: false,
+    src: 'assets/project01.png',
   },
   {
-    title: 'Project 1',
-    description: 'Project 1 description',
-    activeTab: 'games4',
-    isActive: false
+    title: 'Astrology',
+    description: 'Personalized horoscope, compatibility meter, astrological events that help navigate your relationships',
+    activeTab: 'astro',
+    isActive: false,
+    src: 'assets/project01.png',
   },
   {
-    title: 'Project 1',
-    description: 'Project 1 description',
-    activeTab: 'games5',
-    isActive: false
+    title: 'VPN',
+    description: 'Secure VPN apps to stay private online',
+    activeTab: 'vpn',
+    isActive: false,
+    src: 'assets/project01.png',
   },
 ]
 
-  activeTab: string = 'games';
   constructor() { }
 
   ngOnInit(): void {
+    this.selectedProject = this.projects[0]
   }
   showProject(project:Projects) {
   this.projects.forEach(project => project.isActive = false); 
   project.isActive = true;
+  this.selectedProject = project
   }
 }
