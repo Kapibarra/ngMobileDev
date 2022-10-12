@@ -1,27 +1,66 @@
 <div class="about__wrapper">
-    <div class="about">
-        <div class="about__description">
-            <div class="about__title">What are 
-                we doing?</div>
-                <div class="description__tabs">
-                    <ul class="tabs-nav">
-                        <li class="tabs-nav-item" [class.active]="activeTab == 'apps'" (click)="onTabCLick('apps')"><img src="assets/arrow-right.png">Mobile Apps & Web 3.0</li>
-                        <li class="tabs-nav-item" [class.active]="activeTab == 'media'" (click)="onTabCLick('media')"><img src="assets/arrow-right.png">Media Buying</li>
-                        <li class="tabs-nav-item" [class.active]="activeTab == 'nft'" (click)="onTabCLick('nft')"><img src="assets/arrow-right.png">NFT & P2E Pioneers</li>
-                    </ul>
-                </div>
-        </div>
-        <div class="about__image" *ngIf="activeTab == 'apps'" >
-            <div class="about__image-description desc-1">We create Android & iOS apps to bring joy, health, money and more</div>
-            <img src="assets/aboutimage.png" alt="" class="about__image-item image-1" @Opacity>
-        </div>
-        <div class="about__image" *ngIf="activeTab == 'media'">
-            <div class="about__image-description desc-2">We define and deploy the best strategies to reach the target audience</div>
-            <img  src="assets/aboutimage2.png" alt="" class="about__image-item image-2" @Opacity>
-        </div>
-        <div class="about__image" *ngIf="activeTab == 'nft'">
-            <div class="about__image-description desc-3">We make a wide range of cryptocurrency investments, such as NFT and P2E projects</div>
-            <img  src="assets/aboutimage3.png" alt="" class="about__image-item image-3" @Opacity>
-        </div>
+  <div class="about" id="about">
+    <div class="about__description">
+      <div class="about__title">What are we doing?</div>
+      <div class="description__tabs">
+        <ul class="tabs-nav">
+          <li
+            class="tabs-nav-item"
+            [class.active]="activeTab == 'apps'"
+            (click)="onTabCLick('apps')"
+          >
+            <img src="assets/arrow-right.png" />Mobile Apps & Web 3.0
+          </li>
+          <li
+            class="tabs-nav-item"
+            [class.active]="activeTab == 'media'"
+            (click)="onTabCLick('media')"
+          >
+            <img src="assets/arrow-right.png" />Media Buying
+          </li>
+          <li
+            class="tabs-nav-item"
+            [class.active]="activeTab == 'nft'"
+            (click)="onTabCLick('nft')"
+          >
+            <img src="assets/arrow-right.png" />NFT & P2E Pioneers
+          </li>
+        </ul>
+      </div>
     </div>
+    <div class="about__image" *ngIf="activeTab == 'apps'">
+      <div class="about__image-description desc-1">
+        We create Android & iOS apps to bring joy, health, money and more
+      </div>
+      <img
+        src="assets/aboutimage.png"
+        alt=""
+        class="about__image-item image-1"
+        @Opacity
+      />
+    </div>
+    <div class="about__image" *ngIf="activeTab == 'media'">
+      <div class="about__image-description desc-2">
+        We define and deploy the best strategies to reach the target audience
+      </div>
+      <img
+        src="assets/aboutimage2.png"
+        alt=""
+        class="about__image-item image-2"
+        @Opacity
+      />
+    </div>
+    <div class="about__image" *ngIf="activeTab == 'nft'">
+      <div class="about__image-description desc-3">
+        We make a wide range of cryptocurrency investments, such as NFT and P2E
+        projects
+      </div>
+      <img
+        src="assets/aboutimage3.png"
+        alt=""
+        class="about__image-item image-3"
+        @Opacity
+      />
+    </div>
+  </div>
 </div>
