@@ -1,0 +1,112 @@
+.contacts__wrapper {
+  background-image: url(../../../../../assets/bgcontacts.png);
+  background-repeat: no-repeat;
+  margin-top: -2px;
+}
+.contacts {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0 auto;
+  max-width: 1620px;
+  padding-top: 150px;
+  justify-content: space-between;
+  padding-bottom: 62px;
+  & .contacts__title {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 96px;
+    /* identical to box height */
+
+    text-transform: capitalize;
+
+    /* #FFFFFF */
+
+    color: #ffffff;
+  }
+  & .contacts__links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 50px 60px;
+    gap: 40px;
+    justify-content: space-between;
+    /* #000D18 */
+
+    background: #000d18;
+    border-radius: 15px;
+
+    & .contacts__links-item {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 27px;
+      /* identical to box height */
+
+      /* #B2BBC2 */
+
+      color: #b2bbc2;
+      & img {
+        margin-right: 15px;
+      }
+    }
+  }
+}
+
+.terms {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0 auto;
+  max-width: 1620px;
+  padding-bottom: 88px;
+  & .terms-item {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height */
+
+    text-transform: capitalize;
+
+    /* #B2BBC2 */
+
+    color: #b2bbc2;
+  }
+  & .copyright {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height */
+
+    text-transform: capitalize;
+
+    color: rgba(255, 255, 255, 0.25);
+  }
+  & .fb {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: right;
+
+    color: rgba(255, 255, 255, 0.25);
+  }
+}
