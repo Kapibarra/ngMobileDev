@@ -14,6 +14,7 @@ import { MapComponent } from './homepage/shared/components/map/map.component';
 import { JobComponent } from './homepage/shared/components/job/job.component';
 import { ContactsComponent } from './homepage/shared/components/contacts/contacts.component';
 import { AccorionItemComponent } from './homepage/shared/components/projects/accorion-item/accorion-item.component';
+import { BurgerComponent } from './homepage/shared/components/burger/burger.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { AccorionItemComponent } from './homepage/shared/components/projects/acc
     MapComponent,
     JobComponent,
     ContactsComponent,
-    AccorionItemComponent
+    AccorionItemComponent,
+    BurgerComponent
   ],
   imports: [
     BrowserModule,
