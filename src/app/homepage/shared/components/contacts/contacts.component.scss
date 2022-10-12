@@ -1,11 +1,13 @@
 .contacts__wrapper {
   background-image: url(../../../../../assets/bgcontacts.png);
   background-repeat: no-repeat;
+  background-size: cover;
   margin-top: -2px;
 }
 .contacts {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   width: 100%;
   box-sizing: border-box;

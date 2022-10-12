@@ -1,6 +1,7 @@
 .about__wrapper {
   background-image: url(../../../../../assets/bgabout01.png);
   background-repeat: no-repeat;
+  background-size: cover;
   margin-top: -2px;
 }
 .about {
@@ -135,5 +136,21 @@
     & .image-3 {
       padding-right: 300px;
     }
+  }
+}
+
+@media screen and (max-width: 428px) {
+  .about {
+    justify-content: center;
+  }
+  .about__description {
+    margin-bottom: 20px;
+  }
+  .about__image-item {
+    margin-top: 40px;
+    width: 100%;
+  }
+  .about__image-description {
+    position: unset !important;
   }
 }

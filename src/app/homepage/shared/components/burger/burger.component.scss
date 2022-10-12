@@ -183,6 +183,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  max-width: 500px;
   padding: 0px;
   gap: 45px;
   & li {
@@ -224,6 +226,7 @@
   padding-top: 5%;
   padding-bottom: 5%;
   max-width: 550px;
+  width: 100%;
   background: rgba(0, 29, 52, 0.95);
   border-radius: 19.0201px;
 }
