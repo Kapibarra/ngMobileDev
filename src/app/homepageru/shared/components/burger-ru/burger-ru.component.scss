@@ -1,0 +1,240 @@
+.burger-menu {
+  position: relative;
+  top: 40px;
+  width: 100%;
+  max-width: 280px;
+  height: 44px;
+  margin-right: 35px;
+  // margin-top: 8px;
+  box-sizing: border-box;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  & .burger-container {
+    position: relative;
+    .burger-inner {
+      position: absolute;
+      width: 36px - 2 * 1px;
+      z-index: 999;
+      color: #5d5fef;
+      box-sizing: border-box;
+      left: 0px;
+      top: 0px;
+      border: 1px solid #fff;
+      transition: border-color 0.2s ease-in 0.2s;
+      &::before {
+        position: absolute;
+        content: "";
+        top: -8px;
+        left: -1px;
+        width: 36px - 2 * 1px;
+        border: 1px solid #fff;
+        transition: top 0.2s ease-in 0.3s, transform ease-in 0.2s;
+      }
+      &::after {
+        position: absolute;
+        content: "";
+        top: 6px;
+        left: -1px;
+        width: 36px - 2 * 1px;
+        border: 1px solid #fff;
+        transition: top 0.2s ease-in 0.3s, transform ease-in 0.2s;
+      }
+    }
+  }
+  &.active .burger-container .burger-inner {
+    border-color: transparent;
+    transition: border-color ease-in 0.1s;
+  }
+  &.active .burger-container .burger-inner::before {
+    top: -1px;
+    transform: rotate(-45deg);
+    transition: top ease-out 0.2s, transform 0.2s ease-out 0.3s;
+  }
+  &.active .burger-container .burger-inner::after {
+    top: -1px;
+    transform: rotate(45deg);
+    transition: top ease-out 0.2s, transform 0.2s ease-out 0.3s;
+  }
+  & .overlay {
+    position: fixed;
+    z-index: -9;
+    background: rgba(255, 255, 255, 0);
+    height: 100vh;
+    width: 100%;
+    top: -414px;
+    left: 0;
+    right: 0;
+    margin: 0% auto;
+    overflow: hidden;
+    transition: all 550ms ease-in-out;
+    & .burger__nav {
+      transition: width 250ms ease-in-out;
+      opacity: 0;
+      -webkit-transition: width 250ms ease-in-out;
+      -moz-transition: width 250ms ease-in-out;
+      -ms-transition: width 250ms ease-in-out;
+      -o-transition: width 250ms ease-in-out;
+    }
+  }
+}
+
+.burger-menu-btn {
+  color: #fff;
+  display: flex;
+  font-size: 22px;
+  align-items: center;
+  margin-right: 10px;
+}
+.burger__logo {
+  border: 3.04321px solid #ffffff;
+  background: rgba(255, 255, 255, 1);
+  width: 32.28px;
+  height: 0px;
+  margin: 0 auto;
+}
+.burger-menu.active {
+  & .overlay {
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: 0% auto;
+    background: rgba(0, 0, 0, 0.29);
+    height: 100vh;
+    width: 100%;
+    & .burger__nav {
+      transition: width 250ms ease-in-out;
+      opacity: 1;
+      display: flex;
+      margin: 0 auto;
+      list-style: none;
+      padding-inline-start: 0px;
+      flex-direction: column;
+      align-content: center;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: nowrap;
+      margin-top: 20%;
+      box-sizing: border-box;
+    }
+  }
+}
+
+.burger__logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 30%;
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+}
+.burger__nav-lang {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+  margin: 0 auto;
+  margin-top: 30px;
+  max-width: 100px;
+  justify-content: space-between;
+  & li {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height */
+
+    text-transform: capitalize;
+
+    color: rgba(255, 255, 255, 0.25);
+    transition: all 0.2s ease;
+    &:hover {
+      transition: all 0.2s ease;
+      color: #229eff;
+      text-shadow: 0px 0px 15px #229eff;
+    }
+  }
+}
+.burger__copyright {
+  text-align: center;
+  margin-top: 30%;
+  & a {
+    color: #ffffff;
+    text-decoration: unset;
+  }
+  color: #ffffff;
+}
+
+.burger-menu.active {
+  .burger__logo {
+    opacity: 1;
+    transition: opacity 300ms ease-in-out;
+    margin-top: 10%;
+  }
+  .burger__nav-contacts {
+    opacity: 1;
+  }
+}
+.burger__nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  padding: 0px;
+  gap: 45px;
+  & li {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 130.5%;
+    /* identical to box height, or 47px */
+
+    /* #FFFFFF */
+    transition: all 0.2s ease;
+    color: #ffffff;
+    &:hover {
+      transition: all 0.2s ease;
+      color: #229eff;
+      text-shadow: 0px 0px 8px #229eff;
+    }
+  }
+}
+.burger__nav-contacts {
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin-top: 10%;
+  & a {
+    text-decoration: none;
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+    color: #ffffff;
+  }
+}
+
+.overlay__wrapper {
+  margin: 8% auto;
+  padding-top: 2%;
+  box-sizing: border-box;
+  padding-bottom: 2%;
+  max-width: 550px;
+  background: rgba(0, 29, 52, 0.95);
+  border-radius: 19.0201px;
+}
+
+@media screen and (max-width: 428px) {
+  .overlay__wrapper {
+    margin-right: 10px !important;
+    margin-left: 10px !important;
+  }
+}

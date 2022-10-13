@@ -1,0 +1,24 @@
+<div class="burger-menu" [class.active]="active" (click)="onBurgerClicked()">
+  <div class="burger-container">
+    <div class="burger-inner"></div>
+  </div>
+  <div class="overlay">
+    <div class="overlay__wrapper">
+      <div class="burger__logo"></div>
+      <ul class="burger__nav">
+        <li (click)="onClickScroll('about')">What are we doing</li>
+        <li (click)="onClickScroll('projects')">Our projects</li>
+        <li (click)="onClickScroll('traffic')">Traffic Sources</li>
+        <li (click)="onClickScroll('job')">Open positions</li>
+        <li (click)="onClickScroll('contacts')">Contact Us</li>
+      </ul>
+      <ul class="burger__nav-lang">
+        <li [routerLink]="['']">ENG</li>
+        <li [routerLink]="['ru']">RU</li>
+      </ul>
+      <div class="burger__copyright">
+        © <a href="https://madstack.ru"><span>MadStack</span> Digital Agency</a>
+      </div>
+    </div>
+  </div>
+</div>
