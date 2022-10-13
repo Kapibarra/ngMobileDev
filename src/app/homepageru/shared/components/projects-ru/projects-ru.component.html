@@ -1,1 +1,23 @@
-<p>projects-ru works!</p>
+<div class="projects__wrapper">
+  <div class="projects" id="projects">
+    <div class="projects__description">
+      <div class="projects__title">Our Projects</div>
+      <div class="projects__subtitle">
+        Our projects are downloaded more than 10 million times. Some of them:
+      </div>
+      <div class="accordion__module">
+        <app-accordion-item-ru
+          (click)="showProject(project)"
+          [isActiveru]="project.isActiveru"
+          *ngFor="let project of projects; let i = index"
+          title="{{ project.title }}"
+          >{{ project.description }}</app-accordion-item-ru
+        >
+      </div>
+    </div>
+    <div class="projects__image" *ngIf="selectedProject">
+      <img [src]="selectedProject.src" class="project__image-item" />
+      <img src="assets/lightning.png" class="project__image-bg" />
+    </div>
+  </div>
+</div>

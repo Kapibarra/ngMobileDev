@@ -1,0 +1,45 @@
+.map__wrapper {
+  background-image: url(../../../../../assets/bgmap.png);
+  background-repeat: no-repeat;
+  margin-top: -2px;
+  background-size: cover;
+  min-height: 1080px;
+}
+.map {
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0 auto;
+  max-width: 1620px;
+  & .map__title {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 130.5%;
+    /* or 84px */
+    padding-top: 150px;
+    /* #FFFFFF */
+
+    color: #ffffff;
+  }
+  & .map__subtitle {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+
+    /* #B2BBC2 */
+
+    color: #b2bbc2;
+  }
+}
+@media screen and (max-width: 428px) {
+  .map__title {
+    font-size: 32px !important;
+    line-height: 38px !important;
+    margin-bottom: 20px;
+  }
+}

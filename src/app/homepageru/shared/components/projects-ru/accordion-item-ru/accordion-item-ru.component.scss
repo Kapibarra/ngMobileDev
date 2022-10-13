@@ -1,0 +1,41 @@
+.acc-header {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header__title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  /* identical to box height */
+
+  text-transform: capitalize;
+
+  /* #FFFFFF */
+
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+.body {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+
+  color: rgba(255, 255, 255, 0.7);
+}
+.accordion__icon {
+  margin-right: 15px;
+}
+.active {
+  color: #229eff;
+  transform: translateX(5px);
+  transition: all 0.3s ease;
+}

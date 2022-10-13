@@ -1,0 +1,196 @@
+.hero__wrapper {
+  background-image: url(../../../../../assets/bg.png);
+  background-repeat: no-repeat;
+  margin-top: -114px;
+  background-size: cover;
+}
+
+.hero {
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0 auto;
+  max-width: 1580px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  & .hero__description {
+    padding-bottom: 270px;
+  }
+  & .hero__image-section {
+    position: relative;
+    z-index: 9;
+    overflow: hidden;
+    width: 100%;
+    max-width: 483px;
+    padding-right: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+
+    & .hero__image-up {
+      position: absolute;
+      left: 0px;
+      top: 30px;
+      height: 310%;
+      width: 100%;
+      animation: slideshow-up 25s linear infinite;
+      background-image: url(../../../../../assets/hero-column01.png);
+      background-repeat: repeat-y;
+    }
+    & .hero__image-up-2 {
+      position: absolute;
+      left: 240px;
+      top: 30px;
+      height: 310%;
+      width: 100%;
+      animation: slideshow-up 25s linear infinite;
+      background-image: url(../../../../../assets/hero-column02.png);
+      background-repeat: repeat-y;
+    }
+    & .hero__image-down {
+      position: absolute;
+      left: 120px;
+      top: 30px;
+      gap: 30px;
+      height: 310%;
+      width: 100%;
+      animation: slideshow-down 25s linear infinite;
+      background-image: url(../../../../../assets/hero-column03.png);
+      background-repeat: repeat-y;
+    }
+    & .hero__image-down-2 {
+      position: absolute;
+      left: 360px;
+      top: 30px;
+      height: 310%;
+      width: 100%;
+      animation: slideshow-down 25s linear infinite;
+      background-image: url(../../../../../assets/hero-column04.png);
+      background-repeat: repeat-y;
+    }
+  }
+  & .hero__tags {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding-top: 340px;
+    max-width: 571px;
+    width: 100%;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    & .hero__tags-item {
+      width: fit-content;
+      padding: 16px 26px;
+      box-sizing: border-box;
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      /* identical to box height */
+
+      text-transform: capitalize;
+
+      /* #B2BBC2 */
+
+      color: #b2bbc2;
+      /* #000D18 */
+
+      background: #000d18;
+      border-radius: 15px;
+    }
+  }
+  & .hero__title {
+    max-width: 585px;
+    margin-bottom: 30px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 88px;
+    line-height: 132px;
+
+    /* #FFFFFF */
+
+    color: #ffffff;
+  }
+  & .hero__subtitle {
+    max-width: 470px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height */
+
+    /* #FFFFFF */
+
+    color: #ffffff;
+    & .hero__subtitle-img {
+      margin-left: 30px;
+    }
+  }
+}
+
+@keyframes slideshow-up {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: -203%;
+  }
+  100% {
+    top: 0%;
+  }
+}
+@keyframes slideshow-down {
+  0% {
+    top: -203%;
+  }
+  50% {
+    top: 0%;
+  }
+  100% {
+    top: -203%;
+  }
+}
+
+@media screen and (max-width: 428px) {
+  .hero__tags {
+    flex-direction: column !important;
+    gap: 15px;
+  }
+  .hero__title {
+    font-size: 32px !important;
+    line-height: 38px !important;
+  }
+  .hero__image-up {
+    background-size: 100% !important;
+    width: 20% !important;
+  }
+  .hero__image-up-2 {
+    background-size: 100% !important;
+    width: 20% !important;
+    left: 100px !important;
+  }
+  .hero__image-down {
+    background-size: 100% !important;
+    width: 20% !important;
+    left: 50px !important;
+  }
+  .hero__image-down-2 {
+    display: none !important;
+    background-size: 100% !important;
+    width: 20% !important;
+    left: 150px !important;
+  }
+  .hero__image-section {
+    padding-right: unset !important;
+    margin-right: 40px !important;
+  }
+}

@@ -24,7 +24,7 @@ import { HeroRuComponent } from './homepageru/shared/components/hero-ru/hero-ru.
 import { JobRuComponent } from './homepageru/shared/components/job-ru/job-ru.component';
 import { MapRuComponent } from './homepageru/shared/components/map-ru/map-ru.component';
 import { ProjectsRuComponent } from './homepageru/shared/components/projects-ru/projects-ru.component';
-import { AccordionItemRuComponent } from './homepageru/shared/components/projects/accordion-item-ru/accordion-item-ru.component';
+import { AccordionItemRuComponent } from './homepageru/shared/components/projects-ru/accordion-item-ru/accordion-item-ru.component';
 import { TrafficRuComponent } from './homepageru/shared/components/traffic-ru/traffic-ru.component';
 
 @NgModule({

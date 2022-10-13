@@ -1,0 +1,21 @@
+.header {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1580px;
+  height: 114px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-sizing: border-box;
+  & .logo {
+    max-height: 64px;
+    display: flex;
+    align-items: baseline;
+    padding-top: 50px;
+    & img {
+    }
+  }
+}

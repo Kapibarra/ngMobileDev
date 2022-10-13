@@ -1,0 +1,124 @@
+.projects__wrapper {
+  background-image: url(../../../../../assets/bgprojects.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -2px;
+}
+.projects {
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0 auto;
+  max-width: 1620px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 150px;
+  padding-bottom: 275px;
+  & .projects__description {
+    & .projects__title {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 64px;
+      line-height: 96px;
+      max-width: 406px;
+      /* identical to box height */
+
+      /* #FFFFFF */
+
+      color: #ffffff;
+      margin-bottom: 30px;
+    }
+    & .projects__subtitle {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 30px;
+      max-width: 406px;
+      margin-bottom: 80px;
+
+      /* #B2BBC2 */
+
+      color: #b2bbc2;
+    }
+  }
+  & .projects__image {
+    position: relative;
+
+    & .project__image-item {
+      position: relative;
+      top: 30px;
+      left: 0px;
+      z-index: 9;
+      transform: translateX(100%);
+    }
+    & .project__image-bg {
+      position: relative;
+      top: 30px;
+      left: 0px;
+      z-index: 3;
+      left: -17.8%;
+      animation: spin 0.4s infinite linear;
+    }
+  }
+}
+.accordion__module {
+  width: 100%;
+  box-sizing: border-box;
+  font-family: "Poppins";
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 35px 40px;
+  gap: 20px;
+  width: 100%;
+  max-width: 496px;
+  height: auto;
+  /* #002D50 */
+
+  background: #002d50;
+  border-radius: 15px;
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+    filter: brightness(1.3);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+    filter: brightness(0.6);
+  }
+}
+@media screen and (max-width: 428px) {
+  .projects__image {
+    width: 100%;
+    height: auto;
+    max-width: 100vw;
+    & .project__image-item {
+      margin: 0 auto;
+      transform: translateX(50%) !important;
+      width: 50%;
+    }
+    & .project__image-bg {
+      width: 70%;
+      left: 13% !important;
+      top: -42% !important;
+    }
+  }
+  .projects {
+    padding-bottom: unset !important;
+  }
+  .projects__title {
+    font-size: 32px !important;
+    line-height: 38px !important;
+  }
+}
