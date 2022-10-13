@@ -15,6 +15,8 @@ import { JobComponent } from './homepage/shared/components/job/job.component';
 import { ContactsComponent } from './homepage/shared/components/contacts/contacts.component';
 import { AccorionItemComponent } from './homepage/shared/components/projects/accorion-item/accorion-item.component';
 import { BurgerComponent } from './homepage/shared/components/burger/burger.component';
+import { HomepageruComponent } from './homepageru/homepageru.component';
+import { AccordionItemComponent } from './homepageru/shared/components/projects/accordion-item/accordion-item.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { BurgerComponent } from './homepage/shared/components/burger/burger.comp
     JobComponent,
     ContactsComponent,
     AccorionItemComponent,
-    BurgerComponent
+    BurgerComponent,
+    HomepageruComponent,
+    AccordionItemComponent
   ],
   imports: [
     BrowserModule,
