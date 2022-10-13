@@ -135,11 +135,16 @@
     width: 100%;
     max-width: 440px;
     padding: 20px 30px !important;
+    justify-content: center !important;
   }
   .contacts__title {
     font-size: 32px !important;
     line-height: 38px !important;
     margin-bottom: 20px;
+  }
+  .contacts {
+    padding-top: 50px !important;
+    justify-content: center !important;
   }
   .terms {
     flex-direction: column !important;

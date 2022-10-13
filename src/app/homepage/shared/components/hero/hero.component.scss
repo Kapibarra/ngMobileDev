@@ -164,10 +164,20 @@
   .hero__tags {
     flex-direction: column !important;
     gap: 15px;
+    & .hero__tags-item {
+      font-size: 12px !important;
+    }
   }
   .hero__title {
-    font-size: 32px !important;
+    font-size: 22px !important;
     line-height: 38px !important;
+  }
+  .hero__subtitle {
+    font-size: 18px !important;
+    line-height: 38px !important;
+    & .hero__subtitle-img {
+      margin-left: 15px !important;
+    }
   }
   .hero__image-up {
     background-size: 100% !important;
@@ -191,6 +201,5 @@
   }
   .hero__image-section {
     padding-right: unset !important;
-    margin-right: 40px !important;
   }
 }

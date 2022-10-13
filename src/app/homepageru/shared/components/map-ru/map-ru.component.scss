@@ -41,9 +41,11 @@
     font-size: 32px !important;
     line-height: 38px !important;
     margin-bottom: 20px;
+    padding-top: unset !important;
   }
   .map__wrapper {
     background-position: 34%;
+    min-height: 700px !important;
   }
   .map {
     padding-top: 50px !important;
