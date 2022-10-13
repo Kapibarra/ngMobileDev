@@ -61,6 +61,15 @@
     align-items: center;
     align-content: flex-end;
     margin-bottom: -90px;
+    & .traffic__icons-item {
+      transform: scale(1);
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.2);
+        transition: all 0.3s ease-in-out;
+      }
+    }
   }
 }
 @media screen and (max-width: 428px) {

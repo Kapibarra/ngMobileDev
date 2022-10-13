@@ -119,6 +119,7 @@
       flex-wrap: nowrap;
       margin-top: 20%;
       box-sizing: border-box;
+      text-align: center;
     }
   }
 }
@@ -149,7 +150,6 @@
     /* identical to box height */
 
     text-transform: capitalize;
-
     color: rgba(255, 255, 255, 0.25);
     transition: all 0.2s ease;
     &:hover {
@@ -189,12 +189,10 @@
   padding: 0px;
   gap: 45px;
   & li {
-    font-family: "Poppins";
+    font-family: "Montserrat";
     font-style: normal;
-    font-weight: 700;
+    font-weight: 800;
     font-size: 36px;
-    line-height: 130.5%;
-    /* identical to box height, or 47px */
 
     /* #FFFFFF */
     transition: all 0.2s ease;

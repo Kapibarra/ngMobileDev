@@ -15,11 +15,11 @@
   max-width: 1620px;
   padding-top: 150px;
   & .job__title {
-    font-family: "Poppins";
+    font-family: "Montserrat";
     font-style: normal;
-    font-weight: 700;
+    font-weight: 800;
     font-size: 64px;
-    line-height: 96px;
+    line-height: 130.5%;
     /* identical to box height */
 
     text-transform: capitalize;
@@ -98,12 +98,14 @@
         justify-content: flex-end;
       }
     }
-    & .job__headhunter {
-      font-family: "Poppins";
+    & .job__headhunter a {
+      font-family: "Montserrat";
       font-style: normal;
-      font-weight: 600;
+      font-weight: 700;
       font-size: 20px;
-      line-height: 30px;
+      line-height: 140%;
+      color: #229eff;
+      text-shadow: 0px 0px 15px #229eff;
       /* identical to box height */
 
       text-transform: capitalize;
@@ -115,11 +117,13 @@
   }
   & .job__headhunter {
     & a {
-      font-family: "Poppins";
+      font-family: "Montserrat";
       font-style: normal;
-      font-weight: 600;
+      font-weight: 700;
       font-size: 20px;
-      line-height: 30px;
+      line-height: 140%;
+      color: #229eff;
+      text-shadow: 0px 0px 15px #229eff;
       /* identical to box height */
 
       text-transform: capitalize;

@@ -13,9 +13,9 @@
   margin: 0 auto;
   max-width: 1620px;
   & .map__title {
-    font-family: "Poppins";
+    font-family: "Montserrat";
     font-style: normal;
-    font-weight: 700;
+    font-weight: 800;
     font-size: 64px;
     line-height: 130.5%;
     /* or 84px */
@@ -25,11 +25,11 @@
     color: #ffffff;
   }
   & .map__subtitle {
-    font-family: "Poppins";
+    font-family: "Montserrat";
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 20px;
-    line-height: 30px;
+    line-height: 140%;
 
     /* #B2BBC2 */
 
