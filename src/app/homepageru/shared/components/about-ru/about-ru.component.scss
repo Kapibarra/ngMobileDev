@@ -95,12 +95,14 @@
       align-items: flex-start;
       padding: 20px 25px;
       gap: 20px;
+      box-sizing: border-box;
       /* #001D34 */
 
       background: #001d34;
       border-radius: 15px;
       width: 100%;
       max-width: 333px;
+      margin: 0 auto;
       font-family: "Montserrat";
       font-style: normal;
       font-weight: 700;
