@@ -51,11 +51,28 @@
       font-weight: 500;
       font-size: 18px;
       line-height: 27px;
+      display: flex;
+      align-items: center;
       /* identical to box height */
 
       /* #B2BBC2 */
 
       color: #b2bbc2;
+      & a {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        display: flex;
+        align-items: center;
+        /* identical to box height */
+
+        /* #B2BBC2 */
+        text-decoration: none;
+        color: #b2bbc2;
+      }
+
       & img {
         margin-right: 15px;
       }

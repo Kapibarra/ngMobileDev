@@ -114,22 +114,25 @@
     }
   }
   & .job__headhunter {
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 30px;
-    /* identical to box height */
+    & a {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 30px;
+      /* identical to box height */
 
-    text-transform: capitalize;
+      text-transform: capitalize;
 
-    /* #229EFF */
+      /* #229EFF */
 
-    color: #229eff;
-    display: flex;
-    align-items: center;
-    padding-top: 100px;
-    justify-content: flex-end;
+      color: #229eff;
+      display: flex;
+      align-items: center;
+      padding-top: 100px;
+      justify-content: flex-end;
+      text-decoration: none;
+    }
   }
 }
 
