@@ -112,3 +112,25 @@
     color: rgba(255, 255, 255, 0.25);
   }
 }
+
+@media screen and (max-width: 428px) {
+  .contacts__links {
+    width: 100%;
+    max-width: 440px;
+    padding: 20px 30px !important;
+  }
+  .contacts__title {
+    font-size: 32px !important;
+    line-height: 38px !important;
+    margin-bottom: 20px;
+  }
+  .terms {
+    flex-direction: column !important;
+    justify-content: center !important;
+    text-align: center;
+    gap: 15px;
+    & .fb {
+      text-align: center;
+    }
+  }
+}

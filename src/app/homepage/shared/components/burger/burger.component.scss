@@ -4,7 +4,7 @@
   width: 100%;
   max-width: 280px;
   height: 44px;
-  margin-right: 24px;
+  margin-right: 35px;
   // margin-top: 8px;
   box-sizing: border-box;
   padding: 10px;
@@ -224,9 +224,11 @@
 .overlay__wrapper {
   margin: 8% auto;
   padding-top: 5%;
+  margin-right: 10px;
+  margin-left: 10px;
+  box-sizing: border-box;
   padding-bottom: 5%;
   max-width: 550px;
-  width: 100%;
   background: rgba(0, 29, 52, 0.95);
   border-radius: 19.0201px;
 }

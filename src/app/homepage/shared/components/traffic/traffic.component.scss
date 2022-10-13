@@ -1,6 +1,7 @@
 .traffic__wrapper {
   background-image: url(../../../../../assets/bgtraffic.png);
   background-repeat: no-repeat;
+  background-size: cover;
   margin-top: -2px;
 }
 .traffic {
@@ -60,5 +61,17 @@
     align-items: center;
     align-content: flex-end;
     margin-bottom: -90px;
+  }
+}
+@media screen and (max-width: 428px) {
+  .traffic__title {
+    font-size: 32px !important;
+    line-height: 38px !important;
+  }
+  .traffic__subtitle {
+    padding-bottom: 100px !important;
+  }
+  .traffic__icons {
+    justify-content: center !important;
   }
 }

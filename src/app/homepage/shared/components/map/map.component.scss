@@ -35,3 +35,10 @@
     color: #b2bbc2;
   }
 }
+@media screen and (max-width: 428px) {
+  .map__title {
+    font-size: 32px !important;
+    line-height: 38px !important;
+    margin-bottom: 20px;
+  }
+}

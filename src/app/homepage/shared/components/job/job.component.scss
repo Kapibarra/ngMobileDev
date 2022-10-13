@@ -132,3 +132,13 @@
     justify-content: flex-end;
   }
 }
+
+@media screen and (max-width: 428px) {
+  .job__title {
+    font-size: 32px !important;
+    line-height: 38px !important;
+  }
+  .job__content {
+    justify-content: center !important;
+  }
+}
