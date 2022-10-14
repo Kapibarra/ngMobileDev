@@ -143,6 +143,8 @@
 @media screen and (max-width: 428px) {
   .about {
     justify-content: center;
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
   }
   .about__description {
     margin-bottom: 20px;
@@ -158,5 +160,8 @@
     font-size: 32px !important;
     line-height: 38px !important;
     margin-bottom: 40px !important;
+  }
+  .about__wrapper {
+    background-position: 10%;
   }
 }
