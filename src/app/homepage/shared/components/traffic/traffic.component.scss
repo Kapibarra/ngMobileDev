@@ -72,7 +72,27 @@
     }
   }
 }
+.mobileonly {
+  display: none;
+}
 @media screen and (max-width: 428px) {
+  .mobileonly {
+    display: flex;
+    align-items: flex-start;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 24px;
+    max-width: 311px;
+    color: rgba(255, 255, 255, 0.25);
+    & img {
+      max-width: 15px;
+    }
+  }
+  .traffic__note {
+    display: none;
+  }
   .traffic {
     padding-top: 50px !important;
   }
@@ -90,6 +110,7 @@
     padding-bottom: 100px !important;
   }
   .traffic__icons {
+    margin-bottom: 30px !important;
     justify-content: center !important;
     & .traffic__icons-item {
       width: 30%;
