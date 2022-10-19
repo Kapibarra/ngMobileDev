@@ -36,6 +36,9 @@
     color: #b2bbc2;
   }
 }
+.desctop__only {
+  display: block;
+}
 @media screen and (max-width: 428px) {
   .map__title {
     font-size: 32px !important;
@@ -46,5 +49,8 @@
   .map__wrapper {
     background-position: 34%;
     min-height: 705px !important;
+  }
+  .desctop__only {
+    display: none;
   }
 }

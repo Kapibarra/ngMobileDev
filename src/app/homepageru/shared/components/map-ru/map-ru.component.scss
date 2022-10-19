@@ -36,6 +36,9 @@
     color: #b2bbc2;
   }
 }
+.desctop__only {
+  display: block;
+}
 @media screen and (max-width: 428px) {
   .map__title {
     font-size: 32px !important;
@@ -50,5 +53,8 @@
   .map {
     padding-top: 50px !important;
     padding-bottom: 50px !important;
+  }
+  .desctop__only {
+    display: none;
   }
 }

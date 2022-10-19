@@ -161,6 +161,9 @@
 }
 
 @media screen and (max-width: 428px) {
+  .hero__subtitle-img {
+    width: 50px;
+  }
   .hero__tags {
     flex-direction: column !important;
     padding-right: 30px !important;
@@ -176,6 +179,7 @@
   .hero__subtitle {
     font-size: 18px !important;
     line-height: 38px !important;
+    justify-content: flex-start !important;
     & .hero__subtitle-img {
       margin-left: 15px !important;
     }
@@ -202,5 +206,6 @@
   }
   .hero__image-section {
     padding-right: unset !important;
+    margin-left: 30px !important;
   }
 }
