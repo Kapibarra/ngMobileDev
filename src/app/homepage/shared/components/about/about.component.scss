@@ -173,14 +173,20 @@
     align-items: center;
     max-width: 200px !important;
   }
+  .image-2 {
+    padding-right: unset !important;
+  }
   .desc-1 {
     top: 50px !important;
     right: -100px !important;
-    margin-left: auto !important;
+    margin: 0 auto;
+  }
+  .desc-2 {
+    margin: 0 auto;
   }
   .desc-3 {
     top: 50px !important;
     right: -100px !important;
-    margin-left: 50px !important;
+    margin: 0 auto;
   }
 }
