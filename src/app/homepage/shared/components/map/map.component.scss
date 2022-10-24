@@ -4,6 +4,10 @@
   margin-top: -2px;
   background-size: cover;
   min-height: 1080px;
+  & .map__image {
+    width: 100%;
+    max-width: 100%;
+  }
 }
 .map {
   width: 100%;
@@ -48,9 +52,15 @@
   }
   .map__wrapper {
     background-position: 34%;
-    min-height: 705px !important;
+    min-height: 505px !important;
   }
   .desctop__only {
     display: none;
   }
+  // .map__image {
+  //   width: 100%;
+  //   margin-top: 250px;
+  //   overflow-x: hidden !important;
+  //   transform: scale(3);
+  // }
 }
