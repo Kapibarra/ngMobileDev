@@ -4,6 +4,11 @@
   margin-top: -2px;
   background-size: cover;
   min-height: 1080px;
+  & .map__image {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 20px;
+  }
 }
 .map {
   width: 100%;

@@ -140,6 +140,9 @@
 }
 
 @media screen and (max-width: 428px) {
+  .job__wrapper {
+    min-height: auto !important;
+  }
   .job__title {
     text-align: center !important;
     font-size: 32px !important;
@@ -154,5 +157,12 @@
   .job {
     padding-top: 50px !important;
     padding-bottom: 50px !important;
+  }
+  .job__item {
+    max-width: 170px !important;
+    padding: 12px !important;
+  }
+  .job__item-title {
+    font-size: 16px !important;
   }
 }
