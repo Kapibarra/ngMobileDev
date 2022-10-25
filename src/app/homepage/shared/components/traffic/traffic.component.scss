@@ -104,6 +104,10 @@
   .traffic {
     padding-top: 50px !important;
     padding-bottom: 70px !important;
+    & img {
+      margin-top: 5px;
+      margin-right: 3px;
+    }
   }
   .traffic__title {
     font-size: 32px !important;

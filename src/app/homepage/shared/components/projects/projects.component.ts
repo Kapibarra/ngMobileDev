@@ -27,7 +27,7 @@ projects:Projects[] = [
   },
   {
     title: 'Finance',
-    description: 'Practical apps with stock trading signals and financial recommendations',
+    description: 'Apps with stock trading signals and financial recommendations',
     activeTab: 'finance',
     isActive: false,
     src: 'assets/project02.png',
