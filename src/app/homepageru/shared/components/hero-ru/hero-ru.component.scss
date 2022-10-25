@@ -161,12 +161,16 @@
 }
 
 @media screen and (max-width: 428px) {
+  .hero {
+    max-height: 700px !important;
+  }
   .hero__subtitle-img {
     width: 50px;
   }
   .hero__tags {
     flex-direction: column !important;
     padding-right: 30px !important;
+    padding-top: 200px !important;
     gap: 15px;
     & .hero__tags-item {
       font-size: 12px !important;
