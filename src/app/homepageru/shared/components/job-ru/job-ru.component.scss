@@ -138,7 +138,14 @@
     }
   }
 }
-
+.desktop__only {
+  display: block;
+}
+.title__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 @media screen and (max-width: 428px) {
   .job__wrapper {
     min-height: auto !important;
@@ -164,5 +171,8 @@
   }
   .job__item-title {
     font-size: 16px !important;
+  }
+  .desktop__only {
+    display: none !important;
   }
 }
