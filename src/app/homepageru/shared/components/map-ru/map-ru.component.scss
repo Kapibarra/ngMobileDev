@@ -45,6 +45,9 @@
 .desctop__only {
   display: block;
 }
+.mobile__only {
+  display: none !important;
+}
 @media screen and (max-width: 428px) {
   .map__title {
     font-size: 32px !important;
@@ -69,6 +72,9 @@
     min-height: 305px !important;
   }
   .desctop__only {
-    display: none;
+    display: none !important;
+  }
+  .mobile__only {
+    display: block !important;
   }
 }
